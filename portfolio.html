@@ -16,72 +16,80 @@
   </head>
   <body>
     <div class="line">
-      <header class="header container">
-        <div class="navbar__links">
-          <a href="index.html" class="logo logo--primary navbar__content">
-            <span class="logo-color-design--blue">Web</span
-            ><span class="logo-color-design--dark">Studio</span>
-          </a>
-          <!-- NAVBAR -->
-          <nav class="navbar">
-            <ul class="navbar__list">
-              <li class="navbar__item">
-                <!-- LINKS -->
-                <a href="index.html" class="link navbar__content">Agencja</a>
-              </li>
-              <li class="navbar__item">
-                <a
-                  href="portfolio.html"
-                  class="link page--active navbar__content"
-                  >Portfolio</a
+      <header class="header">
+        <div class="container header__wrapper">
+          <div class="header__links">
+            <a href="index.html" class="logo logo--primary">
+              <span class="logo__color-design">Web</span
+              ><span class="logo__color-design logo__color-design--dark"
+                >Studio</span
+              >
+            </a>
+            <!-- NAVBAR -->
+            <nav class="navbar">
+              <ul class="navbar__list">
+                <li class="navbar__item">
+                  <!-- LINKS -->
+                  <a href="index.html" class="link navbar__content">Agencja</a>
+                </li>
+                <li class="navbar__item">
+                  <a
+                    href="portfolio.html"
+                    class="link page-active navbar__content"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="navbar__item">
+                  <a href="#footer" class="link navbar__content">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- CONTACTS -->
+          <div class="contact">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a href="mailto:info@devstudio.com" class="link contact__link">
+                  <svg width="16px" height="12px">
+                    <use href="images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
                 >
               </li>
-              <li class="navbar__item">
-                <a href="#footer" class="link navbar__content">Kontakt</a>
+              <li class="contact__item">
+                <a href="tel:48111111111" class="link contact__link">
+                  <svg width="10px" height="16px">
+                    <use href="images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +48 111 111 111</a
+                >
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
-        <!-- CONTACTS -->
-        <ul class="contact__list">
-          <li class="contact__item">
-            <a href="mailto:info@devstudio.com" class="contact__link">
-              <svg width="16px" height="12px">
-                <use href="images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact__item">
-            <a href="tel:48111111111" class="contact__link">
-              <svg width="10px" height="16px">
-                <use href="images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +48 111 111 111</a
-            >
-          </li>
-        </ul>
       </header>
     </div>
     <!------------------ BUTTONS ------------------>
     <main class="container section">
-      <ul class="filter__list">
-        <li class="filter__item">
-          <button type="button" class="button-filter">Wszystkie</button>
-        </li>
-        <li class="filter__item">
-          <button type="button" class="button-filter">Strony</button>
-        </li>
-        <li class="filter__item">
-          <button type="button" class="button-filter">Aplikacje</button>
-        </li>
-        <li class="filter__item">
-          <button type="button" class="button-filter">Dizajn</button>
-        </li>
-        <li class="filter__item">
-          <button type="button" class="button-filter">Marketing</button>
-        </li>
-      </ul>
+      <div class="filter">
+        <ul class="filter__list">
+          <li class="filter__item">
+            <button type="button" class="button-filter">Wszystkie</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="button-filter">Strony</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="button-filter">Aplikacje</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="button-filter">Dizajn</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="button-filter">Marketing</button>
+          </li>
+        </ul>
+      </div>
       <!------------------ CARDS ------------------>
       <div class="cards">
         <ul class="cards__list">
@@ -282,14 +290,17 @@
       </div>
     </main>
     <!------------------ FOOTER ------------------>
-    <footer class="footer section" id="footer">
+    <footer class="footer section section--medium" id="footer">
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item">
             <!-- LOGO -->
             <a href="index.html" class="logo footer__logo"
-              ><span class="logo-color-design--blue">Web</span>Studio</a
-            >
+              ><span class="logo__color-design">Web</span
+              ><span class="logo__color-design logo__color-design--light"
+                >Studio</span
+              >
+            </a>
             <!-- CONTACTS -->
             <address class="address">
               <ul>
@@ -316,43 +327,45 @@
           <li class="footer__item">
             <div class="join-us">
               <p class="join-us__heading footer__headings">DOŁĄCZ DO NAS</p>
-              <ul class="socials__list">
-                <li class="socials__logo">
-                  <a class="socials__link" href="#">
-                    <svg width="20px" height="20px">
-                      <use href="images/icons.svg#instagram--icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socials__logo">
-                  <a class="socials__link" href="#">
-                    <svg width="20px" height="20px">
-                      <use href="images/icons.svg#twitter--icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socials__logo">
-                  <a class="socials__link" href="#">
-                    <svg width="20px" height="20px">
-                      <use href="images/icons.svg#facebook--icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socials__logo">
-                  <a class="socials__link" href="#">
-                    <svg width="20px" height="20px">
-                      <use href="images/icons.svg#linkedin--icon"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              <div class="socials">
+                <ul class="socials__list">
+                  <li class="socials__logo">
+                    <a class="socials__link" href="#">
+                      <svg width="20px" height="20px">
+                        <use href="images/icons.svg#instagram--icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__logo">
+                    <a class="socials__link" href="#">
+                      <svg width="20px" height="20px">
+                        <use href="images/icons.svg#twitter--icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__logo">
+                    <a class="socials__link" href="#">
+                      <svg width="20px" height="20px">
+                        <use href="images/icons.svg#facebook--icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__logo">
+                    <a class="socials__link" href="#">
+                      <svg width="20px" height="20px">
+                        <use href="images/icons.svg#linkedin--icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
           <li class="footer-item">
             <label class="footer__headings" for="sign-up">
               ZAPISZ SIĘ DO NEWSLETTERA
             </label>
-            <form class="newstletter">
+            <form class="newsletter">
               <input
                 class="newsletter__input"
                 type="email"
