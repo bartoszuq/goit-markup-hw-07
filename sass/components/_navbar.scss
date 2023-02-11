@@ -1,17 +1,19 @@
-.navbar__list {
-  display: flex;
-  margin-left: 93px;
-}
-.navbar__item {
-  position: relative;
-}
-.navbar__item:not(:first-child) {
-  margin-left: 46px;
-}
-.navbar__content {
-  text-decoration: none;
-  color: var(--color-blackish);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
+.navbar {
+  &__list {
+    display: flex;
+    margin-left: 93px;
+  }
+  &__item {
+    position: relative;
+    &:not(:first-child) {
+      margin-left: 46px;
+    }
+  }
+  &__content {
+    text-decoration: none;
+    color: var(--color-blackish);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+  }
 }

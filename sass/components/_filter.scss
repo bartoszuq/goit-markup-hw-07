@@ -1,9 +1,11 @@
-.filter__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-.filter__item:not(:last-child) {
-  margin-right: 8px;
+.filter {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
